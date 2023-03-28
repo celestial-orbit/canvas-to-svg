@@ -931,7 +931,7 @@ export default (function () {
                 "font-weight": style.fontWeight,
 
                 // canvas doesn't support underline natively, but we do :)
-                "text-decoration": this.__fontUnderline,
+                //"text-decoration": this.__fontUnderline, //its never set and ends up as "undefined" in svg.
                 "x": x,
                 "y": y,
                 "text-anchor": getTextAnchor(this.textAlign),
